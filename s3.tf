@@ -1,12 +1,12 @@
 resource "aws_s3_bucket" "onebucket" {
-   bucket = "myvenkat-s3-devsectf125"
+   bucket = "mybucket-1"
    acl = "private"
    
    versioning {
       enabled = true
    }
    tags = {
-     Name = "Bucket1"
+     Name = "mybucket-1"
      Environment = "Test"
    }
 }
